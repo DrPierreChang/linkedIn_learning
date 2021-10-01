@@ -1,5 +1,4 @@
-### Learning Python
-- Learning objectives
+### Learning Python Objectives:
 - Installing Python
 - Choosing an editor or IDE
 - Working with variables and expressions
