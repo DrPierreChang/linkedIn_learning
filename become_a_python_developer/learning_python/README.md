@@ -1,6 +1,6 @@
 .vscode contains debugging json
 
-### Learning Python Objectives:
+### Learning Objectives:
 - Installing Python
 - Choosing an editor or IDE
 - Working with variables and expressions
