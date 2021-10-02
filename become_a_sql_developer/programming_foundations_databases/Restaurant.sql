@@ -46,3 +46,21 @@ SELECT  COUNT(FirstName) FROM Customers
 WHERE State='CA';
 
 SELECT SUM(Price), AVG(Price), MIN(Price), MAX(Price) FROM Dishes;
+
+SELECT FirstName, LastName, FavoriteDish, Dishes.Name FROM Customers
+JOIN Dishes ON Customers.FavoriteDish=Dishes.DishID;
+
+SELECT FirstName, LastName, Reservations.Date, Reservations.PartySize
+FROM Customers
+Join Reservations ON Customers.CustomerID=Reservations.CustomerID
+ORDER BY Reservations.Date;
+
+SELECT OrdersDishes.OrderID, Orders.OrderDate, Customers.FirstName,
+Customers.LastName, Customers.Phone, GROUP_CONCAT(Dishes.Name, ', ') AS Items,
+COUNT(OrdersDishes.DishID) AS Qty,
+SUM(Dishes.Price) AS Total
+FROM OrdersDishes
+Join Dishes ON OrdersDishes.DishID=Dishes.DishID
+Join Orders ON Orders.OrderID=OrdersDishes.OrderID
+Join Customers ON Orders.CustomerID=Customers.CustomerID
+GROUP BY (Orders.OrderID);
