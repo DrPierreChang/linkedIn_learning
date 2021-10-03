@@ -64,3 +64,33 @@ Join Dishes ON OrdersDishes.DishID=Dishes.DishID
 Join Orders ON Orders.OrderID=OrdersDishes.OrderID
 Join Customers ON Orders.CustomerID=Customers.CustomerID
 GROUP BY (Orders.OrderID);
+
+-- modifying data
+
+SELECT * FROM Customers;
+
+INSERT INTO Customers(FirstName, LastName, Email,Phone)
+VALUES ('Jane', 'Smith', 'jsmith2019@landonhotel.com', '415-555-1234');
+
+SELECT * FROM Customers
+WHERE Email='jsmith2019@landonhotel.com';
+
+SELECT * FROM Customers;
+
+INSERT INTO Customers(CustomerID,  FirstName, LastName, Email,Phone)
+VALUES (101, 'Jane2', 'Smith2', 'jsmith2019@landonhotel.com2', '415-555-12342');
+
+DELETE FROM Customers
+WHERE CustomerID='101';
+
+DELETE FROM Customers
+WHERE Email='jsmith2019@landonhotel.com';
+
+INSERT INTO Customers(CustomerID,  FirstName, LastName, Email,Phone)
+VALUES (101, 'Jane', 'Smith', 'jsmith2019@landonhotel.com', '415-555-1234');
+
+SELECT * FROM Customers WHERE FirstName='Taylor' AND LastName='Jenkins';
+
+SELECT * FROM Customers WHERE CustomerID=4;
+
+UPDATE Customers SET Email = 'tjenkins@landonhotel.com' WHERE CustomerID=4;
