@@ -1,16 +1,3 @@
-CREATE TABLE Customers (
-    CustomerID INTEGER (6) NOT NULL PRIMARY KEY,
-    FirstName VARCHAR(200) NOT NULL,
-    LastName VARCHAR(200) NOT NULL,
-    Email VARCHAR(200),
-    Address VARCHAR(200),
-    City VARCHAR(200),
-    State CHAR(2),
-    Phone VARCHAR(20) NOT NULL,
-    Birthday DATE,
-    FavouriteDish INTEGER(6) REFERENCES Dishes(DishID)
-);
-
 SELECT * FROM Customers;
 
 SELECT * FROM Dishes;
