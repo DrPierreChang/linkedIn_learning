@@ -34,3 +34,34 @@ The second problem with the waterfall approach is that it uses top down manageme
 <p align="justify">
 The software industry started debating the manufacturing industry like approach used for developing software as early as the 90's. According to a 1994 Standish Group report, only around 16 percent of the projects surveyed were successfully finished within budget and on time with the features originally scoped. 53 percent of software projects went either over budget, lacked features, did not finish on time, or a combination of these. And according to a 2000 book by Scott Ambler and 85 percent of software projects surveyed ended up as failures. So clearly a new approach was required for software development.
 </p>
+
+
+## Agile to the rescue
+
+<p align="justify">
+&emsp;
+When developing software, change is unavoidable. Requirements change for a variety of reasons. The technology used to build the software becomes obsolete, companies merge or are acquired, the competitive landscape shifts, or team members leave just to name a few common scenarios. In other words, change is the only certainty. This makes software development risky and creates a strong need for unplanned adjustments, customer feedback, and continuous improvement. To manage these challenges, the software developer must be creative and knowledgeable. They cannot rely entirely on detailed predictive planning, checklists, and controlled processes created by someone else.  
+</p>
+
+<p align="justify">
+&emsp;
+Software development is an empirical process which relies on facts and real experiences. Software developers use empiricism to continuously change and improve their plans. Software is built iteratively and in small increments. Each step involves requirements capture, refinement, software analysis and design, building code, unit integration and system testing, deployment, maintenance and bug fixes. At the end of each iteration, a usable software product is produced. This enables software teams to address risks and uncertainties associated with software development at each stage of the process.
+<img src="images/agile_approach.png">
+</p>
+
+<p align="justify">
+&emsp;
+In the nineties, many agile techniques evolved that attempted to solve key challenges facing the software industry. The first attempt, to officially define the agile approach was in 2001 when a group of thought leaders defined what is known as the Agile Manifesto. The Agile Manifesto has four tenets.
+
+- The first is, "Individuals and interactions over processes and tools." The agile mindset values people and their interactions over detailed processes, and the comprehensive use of tools.
+
+- The second tenet is the preference of working software over comprehensive documentation. What good is a detailed data model of the backend database that supports a website, if the website itself does not work? Working software is the ultimate proof of the success of a software development initiative.
+
+- The third tenet is the preference of customer collaboration over contract negotiation. Collaborating with customers to build something that delights them is more important than executing contracts with fixed requirements.
+
+- The last item is a preference of responsiveness to change over following a preordained plan.
+
+<p align="justify">
+&emsp;
+Agile teams embrace change. It's important to note that the Agile Manifesto is not against processes, tools, documentation, contracts, or plans. It just places a higher priority on the four tenets it outlines. The Agile Manifesto reflects the collective wisdom of many industry leaders to lay the foundation of a mindset that is best suited to build complex software products in unpredictable environments.
+</p>
